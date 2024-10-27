@@ -1,0 +1,37 @@
+h1{
+    font-family: "Playwrite GB S", cursive;
+    font-weight: bold;
+    background-color: #DFF2EB;
+    font-size: 30px;
+}
+p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 200;
+    background-color: #B9E5E8;
+    padding: 20px;
+}
+#inputValue{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 25px;
+    text-align: center;
+}
+button{
+    border-radius: 10px;
+    text-align: center;
+    background-color: lightgray;
+}
+div{
+    text-align: center;
+    background-color: #7AB2D3;}
+
+#feedbackValue{
+    background-color: #4A628A;
+}
+
+tr.zebraHover { background-color: #FFFACD; }
+tr.striped_even {
+    background-color: #EFEFEF;
+}
+tr.striped_odd {
+    background-color: #DFDFDF;
+}

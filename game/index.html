@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess a number</title>
+    <link rel="stylesheet" href="game.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap"
+          rel="stylesheet">
+</head>
+<body>
+<div>
+    <h1>Guessing game</h1>
+    <p>Guess a number between 1 and 100</p>
+    <label for="guess">Guess:</label>
+    <input type="number" placeholder="Insert a number" id="guess"><br><br>
+    <button onclick="move()">Submit Guess</button>
+    <p id="feedbackValue"></p>
+    <table>
+        <thead id="moves">
+            <tr>
+                <th>Guess</th>
+                <th>Message</th>
+            </tr>
+        </thead>
+        <tbody class="zebraHover striped_even striped_odd" id="moves">
+
+        </tbody>
+    </table>
+</div>
+<script src="/lib/jquery-3.7.1.js"></script>
+<script src="utility.js"></script>
+<script src="game.js"></script>
+</body>
+</html>
