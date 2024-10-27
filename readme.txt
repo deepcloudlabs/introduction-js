@@ -2,7 +2,8 @@
 2. loops, control structures
 3. arrays
 4. functions
-5. functional programming
-6. object-oriented programming
+5. object-oriented programming
+ *** implement mastermind game
+6. functional programming
 7. event-driven programming
 8. asynchronous programming
