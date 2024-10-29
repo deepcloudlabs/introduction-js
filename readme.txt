@@ -7,3 +7,4 @@
 6. functional programming
 7. event-driven programming
 8. asynchronous programming
+9. modularity
