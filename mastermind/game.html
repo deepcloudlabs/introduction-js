@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MasterMind</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="grid-containertitle">
+        <div class="grid-item title">
+            <h1 onclick="window.location.href='./index.html'">MasterMind</h1>
+        </div>
+        <div class="grid-item menu">
+            <a href="./game.html">Play!</a>
+            <a href="./instructions.html">Instructions</a>
+            <a href="./donate.html">Donate</a>
+            <a href="./about-us.html">About us</a>
+        </div>
+        <div class="grid-item message">
+            <p>MasterMind The Game</p><br>
+        </div>
+    </div>
+    <div class="grid-containergame">
+        <div class="grid-item info">
+            <h2 class="level">Level:</h2>
+            <h2 id="level" class="levelNumber">3</h2>
+            <h2 class="digits">Digits:</h2>
+            <h2 class="digitNumber">3</h2>
+        </div>
+        <div class="grid-item remaining">
+            <h3 class="attempts">Attempts:</h3>
+            <h3 id="attempts" class="attemptsNumber">10</h3>
+            <h3 id="counter" class="lives">60</h3>
+            <h3 class="lives">❤️</h3>
+            <h3 id="lives" class="livesNumber">3</h3>
+        </div>
+        <div class="grid-item secret">
+            <p class="secretNumber">? ? ? ? ? ? ? ? ? ?</p>
+        </div>
+        <div class="grid-item inputButton">
+            <label for="guess">Guess:</label>
+            <input type="number" name="number" id="guess" placeholder="Introduce a number">
+            <button onclick="game.play()">Submit</button>
+        </div>
+        <div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Guess</th>
+                        <th>Message</th>
+                    </tr>
+                </thead>
+                <tbody id="moves">
+
+                </tbody>
+            </table>
+        </div>
+        <div class="grid-item feedback">
+            <p class="feedbackPhrase">Let's start the game!</p>
+            <a href="./game.html" id="restart"></a>
+        </div>
+    </div>
+    <footer>©2024 DeepCloudsLearning / MyVersion</footer>
+    <script src="/lib/jquery-3.7.1.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>Let's start the game!
