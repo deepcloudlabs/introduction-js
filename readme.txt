@@ -5,6 +5,7 @@
 5. object-oriented programming
  *** implement mastermind game
 6. functional programming
+   filter/map/reduce
 7. event-driven programming
 8. asynchronous programming
 9. modularity
