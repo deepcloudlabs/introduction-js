@@ -9,3 +9,5 @@
 7. event-driven programming
 8. asynchronous programming
 9. modularity
+    i. nodejs -> commonjs
+   ii. es6
