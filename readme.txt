@@ -6,7 +6,7 @@
  *** implement mastermind game
 6. functional programming
    filter/map/reduce
-7. event-driven programming
+7. event-driven programming: frontend + nodejs
 8. asynchronous programming
 9. modularity
     i. nodejs -> commonjs
