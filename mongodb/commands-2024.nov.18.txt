@@ -1,0 +1,598 @@
+test> show dbs
+admin            40.00 KiB
+binance-trades    3.41 MiB
+binance_algo     64.00 KiB
+catalog         316.00 KiB
+config           60.00 KiB
+crm              96.00 KiB
+crmdb            48.00 KiB
+h2dpp           320.00 KiB
+hrdb             72.00 KiB
+hsbc             72.00 KiB
+imdb            196.00 KiB
+local            76.00 KiB
+saqdb            76.00 KiB
+shipping         56.00 KiB
+test             40.00 KiB
+tradingdb         1.27 MiB
+world           600.00 KiB
+test> use world
+switched to db world
+world> show collections;
+cities2
+countries1
+countries2
+world> db.countries1.find({"_id": "ESP"})
+[
+  {
+    _id: 'ESP',
+    capital: 653,
+    cities: [
+      {
+        district: 'Madrid',
+        _id: 653,
+        name: 'Madrid',
+        population: 2879052
+      },
+      {
+        district: 'Katalonia',
+        _id: 654,
+        name: 'Barcelona',
+        population: 1503451
+      },
+      {
+        district: 'Valencia',
+        _id: 655,
+        name: 'Valencia',
+        population: 739412
+      },
+      {
+        district: 'Andalusia',
+        _id: 656,
+        name: 'Sevilla',
+        population: 701927
+      },
+      {
+        district: 'Aragonia',
+        _id: 657,
+        name: 'Zaragoza',
+        population: 603367
+      },
+      {
+        district: 'Andalusia',
+        _id: 658,
+        name: 'Málaga',
+        population: 530553
+      },
+      {
+        district: 'Baskimaa',
+        _id: 659,
+        name: 'Bilbao',
+        population: 357589
+      },
+      {
+        district: 'Canary Islands',
+        _id: 660,
+        name: 'Las Palmas de Gran Canaria',
+        population: 354757
+      },
+      {
+        district: 'Murcia',
+        _id: 661,
+        name: 'Murcia',
+        population: 353504
+      },
+      {
+        district: 'Balears',
+        _id: 662,
+        name: 'Palma de Mallorca',
+        population: 326993
+      },
+      {
+        district: 'Castilla and León',
+        _id: 663,
+        name: 'Valladolid',
+        population: 319998
+      },
+      {
+        district: 'Andalusia',
+        _id: 664,
+        name: 'Córdoba',
+        population: 311708
+      },
+      {
+        district: 'Galicia',
+        _id: 665,
+        name: 'Vigo',
+        population: 283670
+      },
+      {
+        district: 'Valencia',
+        _id: 666,
+        name: 'Alicante [Alacant]',
+        population: 272432
+      },
+      {
+        district: 'Asturia',
+        _id: 667,
+        name: 'Gijón',
+        population: 267980
+      },
+      {
+        district: 'Katalonia',
+        _id: 668,
+        name: 'L´Hospitalet de Llobregat',
+        population: 247986
+      },
+      {
+        district: 'Andalusia',
+        _id: 669,
+        name: 'Granada',
+        population: 244767
+      },
+      {
+        district: 'Galicia',
+        _id: 670,
+        name: 'A Coruña (La Coruña)',
+        population: 243402
+      },
+      {
+        district: 'Baskimaa',
+        _id: 671,
+        name: 'Vitoria-Gasteiz',
+        population: 217154
+      },
+      {
+        district: 'Canary Islands',
+        _id: 672,
+        name: 'Santa Cruz de Tenerife',
+        population: 213050
+      },
+      {
+        district: 'Katalonia',
+        _id: 673,
+        name: 'Badalona',
+        population: 209635
+      },
+      {
+        district: 'Asturia',
+        _id: 674,
+        name: 'Oviedo',
+        population: 200453
+      },
+      {
+        district: 'Madrid',
+        _id: 675,
+        name: 'Móstoles',
+        population: 195351
+      },
+      {
+        district: 'Valencia',
+        _id: 676,
+        name: 'Elche [Elx]',
+        population: 193174
+      },
+      {
+        district: 'Katalonia',
+        _id: 677,
+        name: 'Sabadell',
+        population: 184859
+      },
+      {
+        district: 'Cantabria',
+        _id: 678,
+        name: 'Santander',
+        population: 184165
+      },
+      {
+        district: 'Andalusia',
+        _id: 679,
+        name: 'Jerez de la Frontera',
+        population: 182660
+      },
+      {
+        district: 'Navarra',
+        _id: 680,
+        name: 'Pamplona [Iruña]',
+        population: 180483
+      },
+      {
+        district: 'Baskimaa',
+        _id: 681,
+        name: 'Donostia-San Sebastián',
+        population: 179208
+      },
+      {
+        district: 'Murcia',
+        _id: 682,
+        name: 'Cartagena',
+        population: 177709
+      },
+      {
+        district: 'Madrid',
+        _id: 683,
+        name: 'Leganés',
+        population: 173163
+      },
+      {
+        district: 'Madrid',
+        _id: 684,
+        name: 'Fuenlabrada',
+        population: 171173
+      },
+      {
+        district: 'Andalusia',
+        _id: 685,
+        name: 'Almería',
+        population: 169027
+      },
+      {
+        district: 'Katalonia',
+        _id: 686,
+        name: 'Terrassa',
+        population: 168695
+      },
+      {
+        district: 'Madrid',
+        _id: 687,
+        name: 'Alcalá de Henares',
+        population: 164463
+      },
+      {
+        district: 'Castilla and León',
+        _id: 688,
+        name: 'Burgos',
+        population: 162802
+      },
+      {
+        district: 'Castilla and León',
+        _id: 689,
+        name: 'Salamanca',
+        population: 158720
+      },
+      {
+        district: 'Kastilia-La Mancha',
+        _id: 690,
+        name: 'Albacete',
+        population: 147527
+      },
+      {
+        district: 'Madrid',
+        _id: 691,
+        name: 'Getafe',
+        population: 145371
+      },
+      {
+        district: 'Andalusia',
+        _id: 692,
+        name: 'Cádiz',
+        population: 142449
+      },
+      {
+        district: 'Madrid',
+        _id: 693,
+        name: 'Alcorcón',
+        population: 142048
+      },
+      {
+        district: 'Andalusia',
+        _id: 694,
+        name: 'Huelva',
+        population: 140583
+      },
+      {
+        district: 'Castilla and León',
+        _id: 695,
+        name: 'León',
+        population: 139809
+      },
+      {
+        district: 'Valencia',
+        _id: 696,
+        name: 'Castellón de la Plana [Castell',
+        population: 139712
+      },
+      {
+        district: 'Extremadura',
+        _id: 697,
+        name: 'Badajoz',
+        population: 136613
+      },
+      {
+        district: 'Canary Islands',
+        _id: 698,
+        name: '[San Cristóbal de] la Laguna',
+        population: 127945
+      },
+      {
+        district: 'La Rioja',
+        _id: 699,
+        name: 'Logroño',
+        population: 127093
+      },
+      {
+        district: 'Katalonia',
+        _id: 700,
+        name: 'Santa Coloma de Gramenet',
+        population: 120802
+      },
+      {
+        district: 'Katalonia',
+        _id: 701,
+        name: 'Tarragona',
+        population: 113016
+      },
+      {
+        district: 'Katalonia',
+        _id: 702,
+        name: 'Lleida (Lérida)',
+        population: 112207
+      },
+      {
+        district: 'Andalusia',
+        _id: 703,
+        name: 'Jaén',
+        population: 109247
+      },
+      {
+        district: 'Galicia',
+        _id: 704,
+        name: 'Ourense (Orense)',
+        population: 109120
+      },
+      {
+        district: 'Katalonia',
+        _id: 705,
+        name: 'Mataró',
+        population: 104095
+      },
+      {
+        district: 'Andalusia',
+        _id: 706,
+        name: 'Algeciras',
+        population: 103106
+      },
+      {
+        district: 'Andalusia',
+        _id: 707,
+        name: 'Marbella',
+        population: 101144
+      },
+      {
+        district: 'Baskimaa',
+        _id: 708,
+        name: 'Barakaldo',
+        population: 98212
+      },
+      {
+        district: 'Andalusia',
+        _id: 709,
+        name: 'Dos Hermanas',
+        population: 94591
+      },
+      {
+        district: 'Galicia',
+        _id: 710,
+        name: 'Santiago de Compostela',
+        population: 93745
+      },
+      {
+        district: 'Madrid',
+        _id: 711,
+        name: 'Torrejón de Ardoz',
+        population: 92262
+      }
+    ],
+    continent: 'Europe',
+    gnp: 553233,
+    governmentForm: 'Constitutional Monarchy',
+    headOfState: 'Juan Carlos I',
+    indepYear: 1492,
+    lifeExpectancy: 78.8,
+    localName: 'España',
+    name: 'Spain',
+    population: 39441700,
+    region: 'Southern Europe',
+    surfaceArea: 506004
+  }
+]
+world> db.countries2.find({"_id": "ESP"})
+[
+  {
+    _id: 'ESP',
+    capital: 653,
+    cities: [
+      { id: 653 }, { id: 654 }, { id: 655 }, { id: 656 },
+      { id: 657 }, { id: 658 }, { id: 659 }, { id: 660 },
+      { id: 661 }, { id: 662 }, { id: 663 }, { id: 664 },
+      { id: 665 }, { id: 666 }, { id: 667 }, { id: 668 },
+      { id: 669 }, { id: 670 }, { id: 671 }, { id: 672 },
+      { id: 673 }, { id: 674 }, { id: 675 }, { id: 676 },
+      { id: 677 }, { id: 678 }, { id: 679 }, { id: 680 },
+      { id: 681 }, { id: 682 }, { id: 683 }, { id: 684 },
+      { id: 685 }, { id: 686 }, { id: 687 }, { id: 688 },
+      { id: 689 }, { id: 690 }, { id: 691 }, { id: 692 },
+      { id: 693 }, { id: 694 }, { id: 695 }, { id: 696 },
+      { id: 697 }, { id: 698 }, { id: 699 }, { id: 700 },
+      { id: 701 }, { id: 702 }, { id: 703 }, { id: 704 },
+      { id: 705 }, { id: 706 }, { id: 707 }, { id: 708 },
+      { id: 709 }, { id: 710 }, { id: 711 }
+    ],
+    continent: 'Europe',
+    gnp: 553233,
+    governmentForm: 'Constitutional Monarchy',
+    headOfState: 'Juan Carlos I',
+    indepYear: 1492,
+    lifeExpectancy: 78.8,
+    localName: 'España',
+    name: 'Spain',
+    population: 39441700,
+    region: 'Southern Europe',
+    surfaceArea: 506004
+  }
+]
+world> show collections;
+cities2
+countries1
+countries2
+world> db.cities2.find({_id: 669})
+[
+  {
+    _id: 669,
+    countryCode: 'ESP',
+    district: 'Andalusia',
+    name: 'Granada',
+    population: 244767
+  }
+]
+world> show collections;
+cities2
+countries1
+countries2
+world> use imdb;
+switched to db imdb
+imdb> show collections;
+directors2
+genres2
+movies1
+movies2
+imdb> db.movies.find({_id: 1});
+
+imdb> db.movies.find({});
+
+imdb> db.movies2.find({_id: 1});
+[
+  {
+    _id: 1,
+    directors: [ { id: 1 } ],
+    genres: [ { id: 1 }, { id: 2 }, { id: 3 } ],
+    imdb: 'tt1022603',
+    title: '500 Days Of Summer',
+    year: 2007
+  }
+]
+imdb> use dssadfsadfsadfsdaf
+switched to db dssadfsadfsadfsdaf
+dssadfsadfsadfsdaf> show dbs;
+admin            40.00 KiB
+binance-trades    3.41 MiB
+binance_algo     64.00 KiB
+catalog         316.00 KiB
+config          108.00 KiB
+crm              96.00 KiB
+crmdb            48.00 KiB
+h2dpp           320.00 KiB
+hrdb             72.00 KiB
+hsbc             72.00 KiB
+imdb            196.00 KiB
+local            76.00 KiB
+saqdb            76.00 KiB
+shipping         56.00 KiB
+test             40.00 KiB
+tradingdb         1.27 MiB
+world           600.00 KiB
+dssadfsadfsadfsdaf> use dddddddd
+switched to db dddddddd
+dddddddd> db.test42.find()
+
+dddddddd> db.test42.insertOne({fullname: "jack bauer"})
+{
+  acknowledged: true,
+  insertedId: ObjectId('673b77a4061e6e7ff0d8089c')
+}
+dddddddd> show dbs;
+admin            40.00 KiB
+binance-trades    3.41 MiB
+binance_algo     64.00 KiB
+catalog         316.00 KiB
+config          108.00 KiB
+crm              96.00 KiB
+crmdb            48.00 KiB
+dddddddd          8.00 KiB
+h2dpp           320.00 KiB
+hrdb             72.00 KiB
+hsbc             72.00 KiB
+imdb            196.00 KiB
+local            76.00 KiB
+saqdb            76.00 KiB
+shipping         56.00 KiB
+test             40.00 KiB
+tradingdb         1.27 MiB
+world           600.00 KiB
+dddddddd> show collections;
+test42
+dddddddd> use imdb;
+switched to db imdb
+imdb> use dddddddd
+switched to db dddddddd
+dddddddd> db.test42.drop
+db.test42.dropIndexes      db.test42.dropIndex
+db.test42.drop             db.test42.dropSearchIndex
+
+dddddddd> db.test42.drop()
+true
+dddddddd> show collections;
+
+dddddddd> db.dropDatabase("dddddddd");
+{ ok: 1, dropped: 'dddddddd' }
+dddddddd> show dbs;
+admin            40.00 KiB
+binance-trades    3.41 MiB
+binance_algo     64.00 KiB
+catalog         316.00 KiB
+config          108.00 KiB
+crm              96.00 KiB
+crmdb            48.00 KiB
+h2dpp           320.00 KiB
+hrdb             72.00 KiB
+hsbc             72.00 KiB
+imdb            196.00 KiB
+local            76.00 KiB
+saqdb            76.00 KiB
+shipping         56.00 KiB
+test             40.00 KiB
+tradingdb         1.27 MiB
+world           600.00 KiB
+dddddddd> use imdb;
+switched to db imdb
+imdb> show collections;
+directors2
+genres2
+movies1
+movies2
+imdb> db.movies1.find({_id: 1})
+[
+  {
+    _id: 1,
+    directors: [ { _id: 1, imdb: 'nm1989536', name: 'Marc Webb' } ],
+    genres: [
+      { name: 'Comedy', _id: 1 },
+      { name: 'Drama', _id: 2 },
+      { name: 'Romance', _id: 3 }
+    ],
+    imdb: 'tt1022603',
+    title: '500 Days Of Summer',
+    year: 2007
+  }
+]
+imdb> db.movies2.find({_id: 1})
+[
+  {
+    _id: 1,
+    directors: [ { id: 1 } ],
+    genres: [ { id: 1 }, { id: 2 }, { id: 3 } ],
+    imdb: 'tt1022603',
+    title: '500 Days Of Summer',
+    year: 2007
+  }
+]
+imdb> db.directors2.find({_id: 1})
+[ { _id: 1, imdb: 'nm1989536', name: 'Marc Webb' } ]
+imdb> db.ge
+db.getMongo            db.getName             db.getCollectionNames
+db.getCollectionInfos  db.getSiblingDB        db.getCollection
+db.getUser             db.getUsers            db.getRole
+db.getRoles            db.getProfilingStatus  db.getLogComponents
+db.genres2
+
+imdb> db.genres2.find({_id: {"$in": [1,2,3]}})
